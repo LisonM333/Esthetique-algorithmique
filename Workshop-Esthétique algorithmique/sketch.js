@@ -19,7 +19,8 @@ function draw() {
   rotate(-HALF_PI);
   textFont('Verdana',16);
   fill(10);
-  stroke(50);
+  stroke(58, 101, 99);
+  strokeWeight(1);
   text('Sugary', 0, 0);
   pop();
   for (let j = 0; j< 20; j++){
@@ -61,12 +62,17 @@ function draw() {
     fill(0);
     text(j+1+'.',200*j+5,580);
   }
+  stroke(224, 238, 232);
+  strokeWeight(8);
+  line(0,600,4000,600);
+
   push();
   translate(15, 760);
   rotate(-HALF_PI);
   textFont('Verdana',16);
   fill(10);
-  stroke(50);
+  stroke(58, 101, 99);
+  strokeWeight(1);
   text('Acid', 0, 0);
   pop();
   for (let j = 0; j< 20; j++){

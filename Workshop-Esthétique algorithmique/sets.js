@@ -105,5 +105,6 @@ function draw() {
     // text(j+1+'.',Sets_sugary.length*200+50+200*j+5,380);
     
   }
+  
   noLoop();
 }
