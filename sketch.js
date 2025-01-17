@@ -116,6 +116,8 @@ function draw() {
   noLoop();
 }
 
+
+
 const button = document.getElementById('reset');
 
 button.addEventListener('click', () => {
