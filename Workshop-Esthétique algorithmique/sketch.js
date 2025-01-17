@@ -39,7 +39,7 @@ function draw() {
       fill(224, 238, 232);
       stroke(50);
       //stroke(58, 101, 99);
-      strokeWeight(3);
+      strokeWeight(0.5);
       text(couleur, 0, 0);
       pop();
 
@@ -51,7 +51,7 @@ function draw() {
       textFont('Verdana',10);
       fill(224, 238, 232);
       stroke(50);
-      strokeWeight(3);
+      strokeWeight(0.5);
       text(couleur,0,0);
       pop();
     }
@@ -90,7 +90,7 @@ function draw() {
       //fill(200);
       fill(224, 238, 232);
       stroke(50);
-      strokeWeight(3);
+      strokeWeight(0.5);
       text(couleur, 0, 0);
       pop();
 
@@ -102,7 +102,7 @@ function draw() {
       textFont('Verdana',10);
       fill(224, 238, 232);
       stroke(50);
-      strokeWeight(3);
+      strokeWeight(0.5);
       text(couleur,0,0);
       pop();
     }
