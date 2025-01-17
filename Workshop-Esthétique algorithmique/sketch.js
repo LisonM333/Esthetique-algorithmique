@@ -1,10 +1,9 @@
-// let Couleur_sugary= [' #ffb900 ','#ff9b00 ',' #ff4d00 ',' #dc00ff ','#9e00fd','#4900fc']
 let Couleur_sugary= ['#ff0000','#ff7300','#9c2f00','#ff75a1','#ffc4db','#ff039a','#ffc8c2','#a80038','#be85be','#ffcb60']
 let Couleur_acid= ['#fff382','#c6ff6b','#95ff00','#cdcd55','#bfdeb4','#f2dc61','#e8f1ff','#4c4cff','#94bfff','#91e051']
 
 
 function setup(){
-  createCanvas(4000, 600);
+  createCanvas(4000, 1200);
   background(255);
 }
 
@@ -18,7 +17,7 @@ function draw() {
   push();
   translate(15, 180);
   rotate(-HALF_PI);
-  textSize(16);
+  textFont('Verdana',16);
   fill(10);
   stroke(50);
   text('Sugary', 0, 0);
@@ -34,19 +33,38 @@ function draw() {
       push();
       translate(200*j+45+i*40, 270);
       rotate(-HALF_PI);
-      textSize(16);
-      fill(200);
+      textFont('Verdana',16);
+      //fill(200);
+      fill(224, 238, 232);
       stroke(50);
+      //stroke(58, 101, 99);
+      strokeWeight(3);
       text(couleur, 0, 0);
       pop();
+
+      noStroke();
+      rect (200*j+20+20*i,320+30*i,160-40*i,260-40*i);
+      push();
+      translate(200*j+35+i*20,575-i*10);
+      rotate(-HALF_PI);
+      textFont('Verdana',10);
+      fill(224, 238, 232);
+      stroke(50);
+      strokeWeight(3);
+      text(couleur,0,0);
+      pop();
     }
-    fill(0)
-    text(j+1+'.',200*j+5,280)
+    textFont('Verdana',10);
+    fill(0);
+    text(j+1+'.',200*j+5,280);
+    textFont('Verdana',10);
+    fill(0);
+    text(j+1+'.',200*j+5,580);
   }
   push();
-  translate(15, 460);
+  translate(15, 760);
   rotate(-HALF_PI);
-  textSize(16);
+  textFont('Verdana',16);
   fill(10);
   stroke(50);
   text('Acid', 0, 0);
@@ -58,19 +76,42 @@ function draw() {
       fill(couleur);
       Couleurs = noRepeat(Couleurs, couleur);
       noStroke();
-      rect(200*j+20+i*40,320,40,260);
+      rect(200*j+20+i*40,620,40,260);
       push();
-      translate(200*j+45+i*40, 570);
+      translate(200*j+45+i*40, 870);
       rotate(-HALF_PI);
-      textSize(16);
-      fill(200);
+      textFont('Verdana',16);
+      //fill(200);
+      fill(224, 238, 232);
       stroke(50);
+      strokeWeight(3);
       text(couleur, 0, 0);
       pop();
+
+      noStroke();
+      rect (200*j+20+20*i,920+30*i,160-40*i,260-40*i);
+      push();
+      translate(200*j+35+i*20,1175-i*10);
+      rotate(-HALF_PI);
+      textFont('Verdana',10);
+      fill(224, 238, 232);
+      stroke(50);
+      strokeWeight(3);
+      text(couleur,0,0);
+      pop();
     }
-    fill(0)
-    text(j+1+'.',200*j+5,580)
+    textFont('Verdana',10);
+    fill(0);
+    text(j+1+'.',200*j+5,880);
+    textFont('Verdana',10);
+    fill(0);
+    text(j+1+'.',200*j+5,1180);
   }
   noLoop();
 }
 
+const button = document.getElementById('reset');
+
+button.addEventListener('click', () => {
+  location.reload();
+});
